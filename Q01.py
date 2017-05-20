@@ -20,10 +20,7 @@ def main(number):
     :param int number: 
     :return: 
     '''
-    d = isKai(str(number))
-    o = isKai(str(oct(number))[2::])
-    b = isKai(str(bin(number))[2::])
-    if d and o and b:
+    if isKai(str(number)) and isKai(str(oct(number))[2::]) and isKai(str(bin(number))[2::]):
         print(number)
 
 
